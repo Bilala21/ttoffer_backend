@@ -1,0 +1,3465 @@
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.deleted_at' in 'where clause' (Connection: mysql, SQL: select * from `product` where `auction_price` is not null and `status` = 1 and `is_archived` = 0 and `is_sold` = 0 and `notify` = 0 and `ending_date` <= 2024-10-07 and `ending_time` < 22:47 and `product`.`deleted_at` is null)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+    825▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕                 );
+    827▕             }
+    828▕ 
+  ➜ 829▕             throw new QueryException(
+    830▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    831▕             );
+    832▕         }
+    833▕     }
+
+  i   A column was not found: You might have forgotten to run your database migrations. 
+      https://laravel.com/docs/master/migrations#running-migrations
+
+      [2m+11 vendor frames [22m
+
+  12  app/Console/Commands/AuctionEndDate.php:38
+      Illuminate\Database\Eloquent\Builder::get()
+      [2m+12 vendor frames [22m
+
+  25  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.deleted_at' in 'where clause' (Connection: mysql, SQL: select * from `product` where `auction_price` is not null and `status` = 1 and `is_archived` = 0 and `is_sold` = 0 and `notify` = 0 and `ending_date` <= 2024-10-07 and `ending_time` < 22:48 and `product`.`deleted_at` is null)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+    825▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕                 );
+    827▕             }
+    828▕ 
+  ➜ 829▕             throw new QueryException(
+    830▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    831▕             );
+    832▕         }
+    833▕     }
+
+  i   A column was not found: You might have forgotten to run your database migrations. 
+      https://laravel.com/docs/master/migrations#running-migrations
+
+      [2m+11 vendor frames [22m
+
+  12  app/Console/Commands/AuctionEndDate.php:38
+      Illuminate\Database\Eloquent\Builder::get()
+      [2m+12 vendor frames [22m
+
+  25  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [1130] Host 'localhost' is not allowed to connect to this MariaDB server (Connection: mysql, SQL: select * from `product` where `auction_price` is not null and `status` = 1 and `is_archived` = 0 and `is_sold` = 0 and `notify` = 0 and `ending_date` <= 2024-10-10 and `ending_time` < 09:13 and `product`.`deleted_at` is null)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+    825▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕                 );
+    827▕             }
+    828▕ 
+  ➜ 829▕             throw new QueryException(
+    830▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    831▕             );
+    832▕         }
+    833▕     }
+
+      [2m+19 vendor frames [22m
+
+  20  app/Console/Commands/AuctionEndDate.php:38
+      Illuminate\Database\Eloquent\Builder::get()
+      [2m+12 vendor frames [22m
+
+  33  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
+
+   Kreait\Firebase\Exception\Database\DatabaseError 
+
+  invalid_grant
+
+  at vendor/kreait/firebase-php/src/Firebase/Exception/DatabaseApiExceptionConverter.php:58
+     54▕         return match ($code) {
+     55▕             StatusCode::STATUS_UNAUTHORIZED, StatusCode::STATUS_FORBIDDEN => new PermissionDenied($message, $code, $e),
+     56▕             StatusCode::STATUS_PRECONDITION_FAILED => new PreconditionFailed($message, $code, $e),
+     57▕             StatusCode::STATUS_NOT_FOUND => DatabaseNotFound::fromUri($e->getRequest()->getUri()),
+  ➜  58▕             default => new DatabaseError($message, $code, $e),
+     59▕         };
+     60▕     }
+     61▕ }
+     62▕
+
+      [2m+33 vendor frames [22m
+
+  34  app/Http/Controllers/Front/Chat.php:61
+      Kreait\Firebase\Database\Reference::set()
+
+  35  app/Console/Commands/AuctionEndDate.php:50
+      App\Http\Controllers\Front\Chat::firebase_notification()
+
