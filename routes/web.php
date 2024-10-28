@@ -66,3 +66,7 @@ Route::get('/details-fixed', [Shop::class, 'fixed_details'])->name('fixed_detail
 Route::group(['middleware' => 'auth'], function () {
 Route::get('/profile', [Profile::class, 'index'])->name('profile.home');
 });
+
+Route::get("/test",function(){
+    return 12;
+});
